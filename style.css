@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "light";
+  src: url("./Assets/Fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("./Assets/Fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "medium";
+  src: url("./Assets/Fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "semi-bold";
+  src: url("./Assets/Fonts/Poppins-SemiBold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "regular", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.profile-card {
+  min-width: 370px;
+  background: linear-gradient(to top, #fff 65%, #4070f4 65%, #4070f4 100%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #4070f4;
+  margin-bottom: 10px;
+}
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.profile-card .text-data .name {
+  font-size: 1.2rem;
+  font-family: "medium";
+}
+.profile-card .text-data .job {
+  font-size: 0.9rem;
+  font-family: "regular";
+}
+.media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.media-buttons .link {
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  background-color: #4070f4;
+  text-decoration: none;
+  margin: 0 8px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.media-buttons .link img {
+  height: 18px;
+  width: 18px;
+}
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .btn {
+  border: none;
+  background-color: #4070f4;
+  padding: 8px 24px;
+  margin: 0 10px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons .btn:hover {
+  background-color: #0e4bf1;
+}
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+.analytics .data img {
+  height: 18px;
+  width: 18px;
+  margin-right: 6px;
+}
+.data:last-child {
+  border: none;
+}
